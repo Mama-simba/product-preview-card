@@ -1,0 +1,177 @@
+
+:root {
+
+ --darkcyan: hsl(158, 36%, 37%);
+ --cream: hsl(30, 38%, 92%);
+ --verydarkblue: hsl(212, 21%, 14%);
+ --darkgrayishblue: hsl(228, 12%, 48%);
+ --white: hsl(0, 0%, 100%);
+
+    
+
+}
+
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.maincard {
+    width: 50%;
+    height: auto;
+    margin: 3rem auto;
+    display: flex;
+}
+
+
+.productcard {
+    width: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.infocard {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.infosubcard {
+    width: 85%;
+    margin: 2rem auto;
+}
+
+.product {
+    letter-spacing: 0.1em;
+    padding-top: 1.5em;
+}
+
+.product,
+.description,
+.oldprice {
+    color: var(--darkgrayishblue);
+}
+
+
+h1,
+.newprice {
+    font-family: 'Fraunces', serif;
+}
+
+
+h1 {
+    padding-right: 20%;
+}
+
+.description {
+    line-height: 1.5;
+    word-spacing: 4px;
+    font-size: 14px;
+    width: 80%;  
+    margin: 1rem 0 2.5rem 0; 
+}
+
+
+.newprice{
+    color: var(--darkcyan);
+    font-size: 1.5em;
+}
+
+.oldprice {
+    font-size: 0.8em;
+    text-decoration: line-through;
+    position: relative;
+    top: -6px;
+    padding-left: 4rem;
+
+}
+
+
+button {
+   display: block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem auto 0 auto;
+   width: 100%;
+   padding: 1rem 0;  
+   border-radius: 10px;
+   border: none;
+   background-color: var(--darkcyan);
+   color: var(--white); 
+}
+
+button .carticon {
+    padding-right: 5px;
+}
+
+
+
+
+
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--darkcyan);
+    font-weight: bold;
+}
+
+
+footer a:hover{
+    cursor: pointer;
+    color: var(--verydarkblue);
+    text-shadow: 1px 3px 0 #969696, 1px 10px 5px #aba8a8;
+}
+
+
+/* MOBILE DESIGN */
+
+
+@media only screen and (max-width: 989px){
+
+.maincard {
+    width: 85%;   
+} 
+}
+
+
+@media only screen and (max-width: 566px) {
+
+    .maincard {
+        width: 90%;
+        flex-direction: column;
+    }
+
+
+.productcard {
+    width: 100%;
+    height: 350px;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.infocard {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+}
